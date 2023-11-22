@@ -27,7 +27,7 @@ class FrequencyAllocator:
             for other_tower in self.Towers:
                 if tower != other_tower:
                     distance = self.calculate_distance(tower, other_tower)
-                    if distance < 0.01:  # Adjust this distance threshold as needed
+                    if distance < 0.01:  
                         if other_tower.Frequency in available_frequencies:
                             available_frequencies.remove(other_tower.Frequency)
             if available_frequencies:
@@ -77,7 +77,7 @@ def read_tower_data_from_file(filename):
     return towers
 
 if __name__ == "__main__":
-    filename = "tower_data.txt"  # Replace with your file name
+    filename = "tower_data.txt"  
     towers = read_tower_data_from_file(filename)
 
     allocator = FrequencyAllocator(towers)
