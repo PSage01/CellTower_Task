@@ -7,7 +7,7 @@ This program is very simple and easy to use. In the following steps i will expla
 2. Download the tower_data text file and make sure it is in the same directory as your python file as it will not work otherwise.
 3. Replace the data in the text file with your own set of value. Keep in mind that the format of the data in the text file should remain the same(A,LONGITUDE,LATITUDE).
 
-##How the code works
+## How the code works
 1. The code imports all relevant modules needed for the execution of the code. The matplotlib is used to graphically display our results.
 2. A class for celltowers and frequency allocater is made to store all relvant data for later use. As well as constructors.
 3. Functions are created by means of object oriented creation to ensure uniqueness.
